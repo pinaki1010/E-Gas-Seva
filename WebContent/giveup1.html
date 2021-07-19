@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .modal-header, h4, .close {
+      background-color: #580000;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+  }
+  p.italic {
+    font-style: italic;
+    font-text: bold;
+}
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4><span class="glyphicon glyphicon-thumbs-up"></span> Give Up Subsidy</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form" action="Delete" method="post">
+            <div class="form-group">
+            <p style="font-size: 20px; font-weight: bold;">
+  Come join the 'GiveItUp' movement...</p>
+
+  <p style="font-size: 12px; font-weight: bold;" class="italic">
+  Hon'ble Prime Minister Shri Narendra Modi has formally launched 'GiveItUp' movement on 27th of March 2015 in Delhi and appealed to all countrymen who can afford it, to come     forward and give-up their LPG subsidy.
+  </p>
+   <p style="font-size: 12px; font-weight: bold;" class="italic">
+   Every consumer who gives up LPG subsidy will help to provide LPG connection to a BPL family. This will truly be a gift of good health to the women and children of these poor families who suffer most from health issues caused by indoor pollution by using fuels like coal, fire wood, crop waste etc.
+            </p>
+        <p style="font-size: 12px; font-weight: bold;" class="italic">
+                Come join the 'GiveItUp' movement. 
+            </p>
+             <p style="font-size: 12px; font-weight: bold;" class="italic">
+               We value your involvement and would like to have your permission to put your name in the 'Scroll of Honour' for opting out of Subsidy.
+            </p>
+     
+      
+              <label for="email"><span class="glyphicon glyphicon-envelope"></span> Email</label>
+              <input type="text" class="form-control" id="email" name="email" placeholder="Enter email adress">
+            </div>
+            <div class="form-group">
+              <label for="Consumer no"><span class="glyphicon glyphicon-briefcase"></span> Consumerno</label>
+              <input type="text" class="form-control" id="Consumerno" placeholder="Enter your consumer no">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+              <input type="text" class="form-control" id="psw" placeholder="Enter password">
+            </div>
+             <div class="form-group">
+              <label for="Consumer no"><span class="glyphicon glyphicon-briefcase"></span> Phone no</label>
+              <input type="text" class="form-control" id="phone" placeholder="Enter phone no">
+            </div>
+         <div class="checkbox">
+              <label><input type="checkbox" value="" checked>confirm decision</label>
+            </div>
+            <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p>Not a member? <a href="file:///C:/Users/pinaki/eclipse-workspace/Egas/WebContent/WEB-INF/lib/signup.html">Sign Up</a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div> 
+</div>
+ 
+<script>
+$(document).ready(function(){
+        $("#myModal").modal();
+    });
+</script>
+
+</body>
+</html>
